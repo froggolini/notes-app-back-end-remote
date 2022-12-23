@@ -1,4 +1,3 @@
-/* eslint-disable no-underscore-dangle */
 const ClientError = require('../../exceptions/ClientError');
 
 class AuthenticationsHandler {
@@ -33,7 +32,6 @@ class AuthenticationsHandler {
           refreshToken,
         },
       });
-
       response.code(201);
       return response;
     } catch (error) {
